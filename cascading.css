@@ -1,7 +1,22 @@
 @charset "UTF-8";
 body {
-    background-color: lightblue;
+    background-color: #2c2f33;
+}
+* {
+    text-align: center;
 }
 h1 {
-    color: blue;
+    color:white;
+    font-family: "Fira Code";
+    background-color: rgb(55, 41, 70);
+}
+p {
+    color: white;
+}
+img {
+    border-radius: 100000px;
+    width: 1000px;
+}
+table {
+    color: white;
 }
