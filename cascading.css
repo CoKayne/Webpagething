@@ -4,6 +4,10 @@
   --background-color:#f2f2f2;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: var(--background-color);
   margin: 0;
@@ -57,6 +61,7 @@ section {
 
 .hero {
   text-align: center;
+  margin-bottom: 15em;
 }
 
 .left-col .subhead {
@@ -103,31 +108,22 @@ section.feature-section {
   color: white;
 }
 
-ul.feature-list {
-  margin: 0;
-  padding-left: .1em;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (minmax(19rem, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+div.feature-list {
+  padding: 5em;
 }
 
-ul.feature-list li {
-  font-size: 1.1em;
-  margin-bottom: 1em;
-  margin-left: 2em;
-  position: relative;
+div.feature-list h1 {
+  display: block;
+  font-size: 2em;
+  font-weight: bold;
+  margin-top: -1em;
+  width: 100%;
+  text-align: left;
 }
 
-ul.feature-list li:before {
-  content: '';
-  left: -2em;
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  background-image: url("images/bullet.svg");
-  background-size: contain;
-  margin-right: .5em;
+div.feature-list p {
+  font-size: 1.2em;
+  width: 90%;
 }
 
 .feature-section img {
@@ -283,6 +279,9 @@ nav li a:hover {
     background: var(--primary-color);
     color: white;
   }
+  .hero-img {
+    width: 55%;
+  }
 }
 
 @media only screen and (min-width: 1080px) {
@@ -310,8 +309,9 @@ nav li a:hover {
     width: 90%;
   }
   .hero-img {
-    width: 30%;
+    width: 35%;
     margin-right: 8em;
+    margin-top: 1.4em;
   }
   .hero-cta {
     display: -webkit-box;
@@ -321,16 +321,12 @@ nav li a:hover {
   .primary-cta {
     margin-right: 1em;
   }
-  ul.feature-list {
+  div.feature-list {
     display: block;
-    margin-left: 5em;
+    margin-left: -5.3em;
   }
-  ul.feature-list li {
-    font-size: 1.3em;
-  }
-  ul.feature-list li:before {
-    width: 30px;
-    height: 30px;
+  div.feature-list p {
+    width: 70%;
   }
   .feature-section {
     position: relative;
