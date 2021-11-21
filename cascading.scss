@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
 :root {
-    --primary-color:#00AA90;
+    --primary-color:#619EAE;
     --background-color:#f2f2f2;
 }
 
@@ -102,6 +102,8 @@ section {
 
 .hero-img {
     width: 70%;
+    border-radius: 1000em; 
+    border: 1.5px solid ;
     margin-top: 3em;
 }
 
@@ -126,7 +128,7 @@ div.feature-list {
 
     p {
         font-size: 1.2em;
-        width: 90%;
+        width: 100%;
     }
 }
 
@@ -139,7 +141,7 @@ div.feature-list {
     color: white;
 
     li {
-        background: #009490;
+        background: #5ca8b3;
         text-align: center;
         padding: 2em 1em;
         width: 80%;
@@ -150,7 +152,7 @@ div.feature-list {
     img {
         width: 5em;
         height: 5em;
-        border: 5px solid #009490;
+        border: 5px solid #5ca8b3;
         border-radius: 50%;
         margin-top: -4.5em;
     }
@@ -292,7 +294,7 @@ nav {
 
 }
 
-@media only screen and (min-width: 1080px) {
+@media only screen and (min-width: 1150px) {
     
     .container {
         width: 1080px;
@@ -406,6 +408,10 @@ nav {
             background: url("images/dots.svg") no-repeat;
             left: 4.5em;
             top: 2em;
+        }
+
+        .feature-list {
+            margin-left: .3em;
         }
     }
 }
