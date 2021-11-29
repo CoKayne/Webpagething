@@ -356,6 +356,19 @@ nav li a:hover {
     display: -ms-flexbox;
     display: flex;
   }
+  .contact-left img {
+    display: block;
+    width: 2.5%;
+  }
+  .contact-left h2 {
+    margin-bottom: 2em;
+  }
+  .contact-left a {
+    display: block;
+    margin-left: 2em;
+    margin-bottom: .5em;
+    margin-top: -1.5em;
+  }
   .contact-right {
     position: absolute;
     right: 0;

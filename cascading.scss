@@ -372,6 +372,24 @@ nav {
         }
     }
 
+    .contact-left {
+        img {
+            display: block;
+            width: 2.5%;
+            // margin-right: -1.5em;
+            // margin-top: 2em;
+        }
+        h2 {
+            margin-bottom: 2em;
+        }
+        a {
+            display: block;
+            margin-left: 2em;
+            margin-bottom: .5em;
+            margin-top: -1.5em;
+        }
+    }
+
     .contact-right {
         position: absolute;
         right: 0;
