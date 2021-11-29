@@ -12,6 +12,81 @@ body {
   background: var(--background-color);
   margin: 0;
   font-family: "Poppins";
+  padding: 0;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.center {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.box1 {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background: #292929;
+  border-radius: 4px;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.box2 {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-color: #292929;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  border-radius: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.circle {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+  border-radius: 50%;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.shape {
+  position: absolute;
+  width: 22px;
+  height: 30px;
+  background-color: #292929;
+  z-index: 1;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  left: 1px;
+  bottom: 5px;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .navbar {
@@ -355,6 +430,9 @@ nav li a:hover {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+  .contact-left {
+    margin-left: 2em;
   }
   .contact-left img {
     display: block;
