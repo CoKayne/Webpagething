@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 :root {
-  --primary-color:#619EAE;
+  --primary-color:#EB7A77;
   --background-color:#f2f2f2;
 }
 
@@ -15,6 +15,48 @@ body {
   padding: 0;
   -webkit-transition: 1s;
   transition: 1s;
+}
+
+.label {
+  position: absolute;
+}
+
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+body.dark {
+  background-color: #292929;
+}
+
+body.dark .navbar {
+  background-color: #292929;
+}
+
+body.dark .navbar .logo {
+  color: #fff;
+}
+
+body.dark .navbar a {
+  display: block;
+  color: #fff;
+}
+
+body.dark .hero .left-col h1 {
+  color: #fff;
+}
+
+body.dark .hero .left-col .watch-video-cta {
+  color: #fff;
+}
+
+body.dark .hero .left-col .subhead {
+  color: #bdbdbd;
+}
+
+body.dark .hero .hero-img {
+  border: 1px solid white;
 }
 
 .center {
@@ -91,11 +133,15 @@ body {
 
 .navbar {
   background: white;
+  -webkit-transition: 1s;
+  transition: 1s;
   padding: 1em;
 }
 
 .navbar .logo {
   text-decoration: none;
+  -webkit-transition: 1s;
+  transition: 1s;
   font-weight: bold;
   color: black;
   font-size: 1.2em;
@@ -121,6 +167,9 @@ body {
 }
 
 a {
+  display: block;
+  -webkit-transition: 1s;
+  transition: 1s;
   color: #444444;
 }
 
@@ -141,6 +190,8 @@ section {
 
 .left-col .subhead {
   text-transform: uppercase;
+  -webkit-transition: 1s;
+  transition: 1s;
   font-weight: bold;
   color: gray;
   letter-spacing: 0.3em;
@@ -150,6 +201,8 @@ section {
   font-size: 2.5em;
   line-height: 1.3em;
   margin-top: 0.2em;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .left-col .primary-cta {
@@ -176,8 +229,10 @@ section {
 .hero-img {
   width: 70%;
   border-radius: 1000em;
-  border: 1.5px solid;
+  border: 1px solid;
   margin-top: 3em;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 section.feature-section {

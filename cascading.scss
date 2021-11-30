@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
 :root {
-    --primary-color:#619EAE;
+    --primary-color:#EB7A77;
+    // #619EAE
     --background-color:#f2f2f2;
 }
 
@@ -19,6 +20,55 @@ body {
     // justify-content: center;
     // align-items: center;
     // min-height: 100vh;
+}
+
+.label {
+    position: absolute;
+}
+
+.checkbox {
+    opacity: 0;
+    position: absolute;
+}
+
+body.dark {
+    background-color: #292929;
+
+    .navbar {
+        background-color: #292929;
+
+        .logo {
+            color: #fff;
+        }
+
+        a {
+            display: block;
+            color: #fff;
+        }
+    }
+
+    .hero {
+
+        .left-col {
+
+            h1 {
+                color: #fff;
+            }
+
+            .watch-video-cta {
+                color: #fff;
+            }
+
+            .subhead {
+                color: rgb(189, 189, 189);
+            }
+        }
+
+        .hero-img {
+            border: 1px solid white;
+        }
+
+    }
 }
 
 .center {
@@ -77,10 +127,12 @@ body {
 
 .navbar {
     background: white;
+    transition: 1s;
     padding: 1em;
 
     .logo {
         text-decoration: none;
+        transition: 1s;
         font-weight: bold;
         color: black;
         font-size: 1.2em;
@@ -105,6 +157,8 @@ body {
 }
 
 a {
+    display: block;
+    transition: 1s;
     color: #444444;
 }
 
@@ -127,6 +181,7 @@ section {
 
     .subhead {
         text-transform: uppercase;
+        transition: 1s;
         font-weight: bold;
         color: gray;
         letter-spacing: 0.3em;
@@ -136,6 +191,7 @@ section {
         font-size: 2.5em;
         line-height: 1.3em;
         margin-top: 0.2em;
+        transition: 1s;
     }
 
     .primary-cta {
@@ -152,6 +208,7 @@ section {
     .watch-video-cta {
         display: block;
         margin-top: 1em;
+        // text-decoration: none;
 
         img {
             margin-right: .7em;
@@ -163,8 +220,9 @@ section {
 .hero-img {
     width: 70%;
     border-radius: 1000em; 
-    border: 1.5px solid ;
+    border: 1px solid ;
     margin-top: 3em;
+    transition: 1s;
 }
 
 section.feature-section {
