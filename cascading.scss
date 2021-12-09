@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
 :root {
-    --primary-color:#EB7A77;
+    --primary-color: #619eae;
     // #619EAE
     --background-color:#f2f2f2;
 }
@@ -59,6 +59,10 @@ body.dark {
                 color: #fff;
             }
 
+            img {
+                filter: invert(100%);
+            }
+
             .subhead {
                 color: rgb(189, 189, 189);
             }
@@ -69,6 +73,23 @@ body.dark {
         }
 
     }
+
+    .contact-left {
+        h2 {
+            color: #fff;
+        }
+
+        a {
+            display: block;
+            color: #fff;
+        }
+
+        .github-logo {
+            filter: invert(100%);
+        }
+        
+    }
+
 }
 
 .center {
@@ -211,6 +232,7 @@ section {
         // text-decoration: none;
 
         img {
+            transition: 1s;
             margin-right: .7em;
             margin-bottom: -.2em;
         }
@@ -260,19 +282,40 @@ div.feature-list {
 
     li {
         background: #5ca8b3;
+        // background-image: url(images/Me.jpg);
         text-align: center;
         padding: 2em 1em;
         width: 80%;
         margin: 0 auto 5em auto;
         border-radius: 1em;
+
+        &:hover {
+            img {
+                transform: translateY(-2em);
+            }
+        }
+    }
+
+    a {
+        // background: var(--primary-color);
+        border: 2px solid white;
+        border-radius: 30px;
+        text-decoration: none;
+        color: #fff;
+        font-weight: bolder;
+        font-size: 2em;
     }
 
     img {
-        width: 5em;
-        height: 5em;
+        transition: .5s;
+        width: 12em;
+        height: 12em;
         border: 5px solid #5ca8b3;
         border-radius: 50%;
+        // border: 1px solid #fff;
         margin-top: -4.5em;
+        margin-bottom: 1em;
+
     }
 }
 
@@ -333,17 +376,22 @@ nav {
     }
 
     li {
+        // column-gap: 10em;
 
         a {
             color: white;
             text-decoration: none;
             display: block;
             font-size: 1.3em;
+            // border-radius: 10px;
             padding: .5em;
             text-align: right;
 
             &:hover {
+                // background: var(--primary-color);
+                color: var(--primary-color);
                 font-weight: bold;
+                transform: translateY(-3px);
             }
         }
     }
