@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 :root {
-  --primary-color:#EB7A77;
+  --primary-color: #619eae;
   --background-color:#f2f2f2;
 }
 
@@ -51,12 +51,31 @@ body.dark .hero .left-col .watch-video-cta {
   color: #fff;
 }
 
+body.dark .hero .left-col img {
+  -webkit-filter: invert(100%);
+          filter: invert(100%);
+}
+
 body.dark .hero .left-col .subhead {
   color: #bdbdbd;
 }
 
 body.dark .hero .hero-img {
   border: 1px solid white;
+}
+
+body.dark .contact-left h2 {
+  color: #fff;
+}
+
+body.dark .contact-left a {
+  display: block;
+  color: #fff;
+}
+
+body.dark .contact-left .github-logo {
+  -webkit-filter: invert(100%);
+          filter: invert(100%);
 }
 
 .center {
@@ -222,6 +241,8 @@ section {
 }
 
 .left-col .watch-video-cta img {
+  -webkit-transition: 1s;
+  transition: 1s;
   margin-right: .7em;
   margin-bottom: -.2em;
 }
@@ -276,12 +297,29 @@ div.feature-list p {
   border-radius: 1em;
 }
 
+.testimonials-section li:hover img {
+  -webkit-transform: translateY(-2em);
+          transform: translateY(-2em);
+}
+
+.testimonials-section a {
+  border: 2px solid white;
+  border-radius: 30px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bolder;
+  font-size: 2em;
+}
+
 .testimonials-section img {
-  width: 5em;
-  height: 5em;
+  -webkit-transition: .5s;
+  transition: .5s;
+  width: 12em;
+  height: 12em;
   border: 5px solid #5ca8b3;
   border-radius: 50%;
   margin-top: -4.5em;
+  margin-bottom: 1em;
 }
 
 h2 {
@@ -352,7 +390,10 @@ nav li a {
 }
 
 nav li a:hover {
+  color: var(--primary-color);
   font-weight: bold;
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
 }
 
 .mobile-menu-exit {
