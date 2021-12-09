@@ -43,6 +43,12 @@ body.dark .navbar a {
   color: #fff;
 }
 
+body.dark .navbar a:hover {
+  -webkit-transition: .5s;
+  transition: .5s;
+  color: var(--primary-color);
+}
+
 body.dark .hero .left-col h1 {
   color: #fff;
 }
@@ -158,12 +164,16 @@ body.dark .contact-left .github-logo {
 }
 
 .navbar .logo {
+  display: block;
+  text-align: center;
+  margin-right: 10em;
   text-decoration: none;
   -webkit-transition: 1s;
   transition: 1s;
   font-weight: bold;
   color: black;
   font-size: 1.2em;
+  border-radius: 20px;
 }
 
 .navbar .logo span {
@@ -394,6 +404,8 @@ nav li a {
 }
 
 nav li a:hover {
+  -webkit-transition: .5s;
+  transition: .5s;
   color: var(--primary-color);
   -webkit-transform: translateY(-3px);
           transform: translateY(-3px);
