@@ -298,8 +298,8 @@ div.feature-list p {
 }
 
 .testimonials-section li:hover img {
-  -webkit-transform: translateY(-2em);
-          transform: translateY(-2em);
+  -webkit-transform: translateY(-1.5em);
+          transform: translateY(-1.5em);
 }
 
 .testimonials-section a {
@@ -380,6 +380,10 @@ nav ul.primary-nav {
   margin-top: 5em;
 }
 
+nav li {
+  display: block;
+}
+
 nav li a {
   color: white;
   text-decoration: none;
@@ -391,7 +395,6 @@ nav li a {
 
 nav li a:hover {
   color: var(--primary-color);
-  font-weight: bold;
   -webkit-transform: translateY(-3px);
           transform: translateY(-3px);
 }

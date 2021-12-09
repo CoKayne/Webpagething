@@ -291,7 +291,7 @@ div.feature-list {
 
         &:hover {
             img {
-                transform: translateY(-2em);
+                transform: translateY(-1.5em);
             }
         }
     }
@@ -373,10 +373,12 @@ nav {
 
     ul.primary-nav {
         margin-top: 5em;
+        // column-gap: 10em;
     }
 
     li {
-        // column-gap: 10em;
+        display: block;
+        // width: 8em;
 
         a {
             color: white;
@@ -390,7 +392,7 @@ nav {
             &:hover {
                 // background: var(--primary-color);
                 color: var(--primary-color);
-                font-weight: bold;
+                // font-weight: bold;
                 transform: translateY(-3px);
             }
         }
