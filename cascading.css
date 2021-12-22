@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
 :root {
   --primary-color: #619eae;
   --background-color:#f2f2f2;
@@ -68,6 +69,11 @@ body.dark .hero .left-col .subhead {
 
 body.dark .hero .hero-img {
   border: 1px solid white;
+}
+
+body.dark .contact-left img {
+  display: block;
+  width: 2.5%;
 }
 
 body.dark .contact-left h2 {
@@ -174,6 +180,13 @@ body.dark .contact-left .github-logo {
   color: black;
   font-size: 1.2em;
   border-radius: 20px;
+}
+
+.navbar .logo:hover {
+  color: red;
+  background-color: red;
+  -webkit-box-shadow: 0 0 10px var(--primary-color), 0 0 40px var(--primary-color), 0 0 80px var(--primary-color);
+          box-shadow: 0 0 10px var(--primary-color), 0 0 40px var(--primary-color), 0 0 80px var(--primary-color);
 }
 
 .navbar .logo span {
@@ -342,6 +355,26 @@ label {
   margin-bottom: .5em;
 }
 
+.contact-left {
+  margin-left: 2em;
+}
+
+.contact-left img {
+  display: block;
+  width: 2.5%;
+}
+
+.contact-left h2 {
+  margin-bottom: 2em;
+}
+
+.contact-left a {
+  display: block;
+  margin-left: 2em;
+  margin-bottom: .5em;
+  margin-top: -1.5em;
+}
+
 input, textarea {
   width: 100%;
   padding: .8em;
@@ -367,6 +400,7 @@ input[type="submit"] {
 }
 
 iframe {
+  margin-top: 3em;
   width: 100%;
   height: 300px;
 }
@@ -468,7 +502,7 @@ nav li a:hover {
     color: white;
   }
   .hero-img {
-    width: 55%;
+    width: 45%;
   }
 }
 
