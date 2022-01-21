@@ -1,12 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kayne Duan - Musicworks</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kayne Duan - Musicworks</title>
+  <link rel="stylesheet" href="cascading2.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
-<body>
+
+<body class="body">
+
+    <input type="checkbox" class="checkbox" id="checkbox">
+    <label for="checkbox" class="label">
+      <div class="center" onclick="toggleSwitch()">
+        <div class="box1">
+          <div class="shape"></div>
+        </div>
+        <div class="box2">
+          <div class="circle"></div>
+        </div>
+      </div>
+    </label>
+
+    <div class="navbar">
+        <div class="container">
+          <a class="logo" href="#">Kayne<span>Duan</span></a>
+
+          <img id="mobile-cta" class="mobile-menu" src="images/menu.svg" alt="Open Navigation">
+
+          <nav>
+            <img id="mobile-exit" class="mobile-menu-exit" src="images/exit.svg" alt="Close Navigation"> 
+            <ul class="primary-nav">
+              <li class="current"><a href="#">Home</a></li>
+              <li><a href="#">Musicworks</a></li>
+              <li><a href="#">Projects</a></li>
+              <li><a href="#">Schoolworks</a></li>
+            </ul>            
+
+            <ul class="secondary-nav">
+              <li><a href="#contact-section-scroll">Contact</a></li>
+              <li class="go-premium-cta"><a href="#">New Stuff</a></li>
+            </ul>            
+          </nav>
+        </div>
+    </div>
+
+    <!--                         -->
+
+    <section class="hero">
+      <div class="container">
+        <div class="left-col">
+
+            <img src="https://cdn.pixabay.com/photo/2021/07/17/09/32/dj-6472628_1280.jpg" alt="person">
+            
+          <div class="hero-cta">
+          </div>
+        </div>
+      </div>   
+    </section>
+
+    <section id="feature-section-scroll" class="feature-section">
+      <div class="container" >
+        <div class="feature-list" data-aos="fade-right">
+          <h1>Hello! I'm Kayne Duan!</h1>
+          <p>
+            I am a high-school Student based in Taiwan,<br>
+            with a passion for programming and music producing.<br>
+            Not long time ago, I established a youtube channel called Dkayne,<br> where I put all my musicworks.<br> 
+            Besides coding and producing, designing is also one of my habits,<br> 
+            I designed clothes for my class at school, and also for my club -- CSDC.<br>
+            CSDC stands for Computer Science Develop Club, a club where students can discuss about all the things 
+            associated to computer, and I am the director there.
+          </p>
+        </div>
+
+        <img src="images/conan copy.jpg" alt="Me dressed up as Conan">
+      </div>
+    </section>
+
+    <section class="testimonials-section">
+      <div class="container">
+        <ul>
+          <li>
+            <img src="https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fspecials-images.forbesimg.com%2Fdam%2Fimageserve%2F1157354179%2F960x0.jpg%3Ffit%3Dscale" alt="Person">
+            <a href="#">Projects</a>
+          </li>
+          <li>
+            <img src="https://i.pinimg.com/736x/0d/4a/a1/0d4aa16fe31dba498c27f3850cdf0e80.jpg" alt="Person">
+            <a href="#">Schoolworks</a>
+          </li>
+          <li>
+            <img src="https://cdn.pixabay.com/photo/2021/07/17/09/32/dj-6472628_1280.jpg" alt="Person">
+            <a href="index2.html">Musicworks</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact-section-scroll" class="contact-section">
+      <div class="container">
+        <div class="contact-left" data-aos="fade-right">
+          <h2>Contact me</h2>
+
+          <img src="images/instagram-Logo-PNG-Transparent-Background-download.png" alt="Instagram logo">
+          <a href="https://www.instagram.com/kayneduan727">Instagram</a> <br>
+          <img src="images/discord_logo.png"alt="Discord logo">
+          <a href="https://discord.gg/C4ghC83s">Discord</a> <br>
+          <img src="images/facebook_logo.png" alt="Facebook logo">
+          <a href="https://www.facebook.com/kayneduan">Facebook</a> <br>
+          <img class="github-logo" src="images/GitHub-Mark-120px-plus.png" alt="Github logo">
+          <a href="https://github.com/CoKayne">Github - CoKayne</a>
+        </div>
+          <div class="contact-right">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18474.83538977995!2d-5.858253109828793!3d54.63297688718848!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48610a0b0e6557e7%3A0x86ece137255b5190!2z6Iux5ZyL6ZyN5Yip5LyN5b63!5e0!3m2!1szh-TW!2stw!4v1637325650336!5m2!1szh-TW!2stw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+      </div>
+    </section>
     
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="index.js"></script>
+
 </body>
 </html>
