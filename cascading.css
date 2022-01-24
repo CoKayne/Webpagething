@@ -2,6 +2,7 @@
 :root {
   --primary-color: #619eae;
   --background-color:#f2f2f2;
+  --darktheme-color: #292929;
 }
 
 html {
@@ -68,6 +69,10 @@ body.dark .hero .left-col .subhead {
 
 body.dark .hero .hero-img {
   border: 1px solid white;
+}
+
+body.dark .feature-section {
+  background-color: var(--darktheme-color);
 }
 
 body.dark .contact-left img {
@@ -279,6 +284,8 @@ section {
 }
 
 section.feature-section {
+  -webkit-transition: .5s;
+  transition: .5s;
   background: #20272e;
   color: white;
 }
