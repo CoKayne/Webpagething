@@ -215,7 +215,7 @@ section {
   -webkit-transition: 1s;
   transition: 1s;
   color: #fff;
-  font-size: 5em;
+  font-size: 4em;
   display: block;
   text-align: justify;
 }
@@ -229,26 +229,51 @@ section.feature-section {
   color: white;
 }
 
-div.feature-list {
-  padding: 5em;
-}
-
-div.feature-list h1 {
-  display: block;
-  font-size: 2em;
-  font-weight: bold;
-  margin-top: -1em;
-  width: 100%;
-  text-align: left;
-}
-
 div.feature-list p {
+  margin-bottom: 3.5rem;
+  display: block;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
   font-size: 1.2em;
   width: 100%;
 }
 
-.feature-section img {
-  display: none;
+.worklist a {
+  max-width: 40em;
+  text-align: center;
+  position: relative;
+  text-decoration: none;
+}
+
+.worklist a h1 {
+  position: absolute;
+  color: #fff;
+  opacity: 0%;
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+.worklist a img {
+  width: 40em;
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
+  height: 22em;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 15px;
+}
+
+.worklist a:hover h1 {
+  opacity: 100%;
+}
+
+.worklist a:hover img {
+  opacity: 35%;
 }
 
 .testimonials-section {
@@ -415,24 +440,13 @@ nav li a:hover {
             justify-content: space-between;
     text-align: center;
   }
-  div.feature-list {
-    display: block;
-    margin-left: -5.3em;
-  }
   div.feature-list p {
-    width: 70%;
+    width: 60em;
   }
   .feature-section {
     -webkit-transition: 1s;
     transition: 1s;
     position: relative;
-  }
-  .feature-section img {
-    display: block;
-    position: absolute;
-    right: 0;
-    width: 350px;
-    bottom: -2em;
   }
   .testimonials-section ul {
     display: -webkit-box;

@@ -207,7 +207,7 @@ section {
     h1 {
         transition: 1s;
         color: #fff;
-        font-size: 5em;
+        font-size: 4em;
         display: block;
         text-align: justify;
     }
@@ -224,25 +224,66 @@ section.feature-section {
 }
 
 div.feature-list {
-    padding: 5em;
-
-    h1 {
-        display: block;
-        font-size: 2em;
-        font-weight: bold;
-        margin-top: -1em;
-        width: 100%;
-        text-align: left;
-    }
 
     p {
+        margin-bottom: 3.5rem;
+        display: block;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
         font-size: 1.2em;
         width: 100%;
     }
 }
 
-.feature-section img {
-    display: none;
+.worklist {
+
+    // position: relative;
+ 
+    a {         
+        max-width: 40em;
+        text-align: center;
+        position: relative;
+        // display: block;
+        // align-items: center;
+        // display: flex;
+        // justify-content: center;
+        // align-items: center;
+        text-decoration: none;
+
+        h1 {
+            position: absolute;
+            color: #fff;
+            opacity: 0%;
+            transition: 2s;
+        }
+
+        img {
+            // display: block;
+            // margin-left: auto;
+            // margin-right: auto;
+            width: 40em;
+            transition: 1.5s;
+            height: 22em;
+            object-fit: cover;
+            border-radius: 15px;
+            
+        }
+
+        &:hover {
+            
+            h1 {
+                opacity: 100%;
+            }
+
+            img {
+                opacity: 35%;
+            }
+        }
+        
+    }
+
+
 }
 
 .testimonials-section {
@@ -414,32 +455,19 @@ nav {
     }
 
     .hero .container {
-        // display: flex;
         justify-content: space-between;
         text-align: center;
     }
     
     div.feature-list {
-        display: block;
-        margin-left: -5.3em;
-
         p {
-            width: 70%;
-        } 
-        
+            width: 60em;
+        }  
     }
 
     .feature-section {
         transition: 1s;
         position: relative; 
-    }
-
-    .feature-section img {
-        display: block;
-        position: absolute;
-        right: 0;
-        width: 350px;
-        bottom: -2em;
     }
 
     .testimonials-section ul {
