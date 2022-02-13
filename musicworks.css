@@ -215,7 +215,7 @@ section {
   -webkit-transition: 1s;
   transition: 1s;
   color: #fff;
-  font-size: 4em;
+  font-size: 3.2em;
   display: block;
   text-align: justify;
 }
@@ -244,36 +244,27 @@ div.feature-list p {
 }
 
 .worklist a {
-  max-width: 40em;
-  text-align: center;
-  position: relative;
   text-decoration: none;
+  text-align: center;
 }
 
 .worklist a h1 {
-  position: absolute;
   color: #fff;
-  opacity: 0%;
   -webkit-transition: 2s;
   transition: 2s;
+  margin-top: 0;
+  margin-bottom: 3em;
+  font-size: larger;
 }
 
 .worklist a img {
-  width: 40em;
   -webkit-transition: 1.5s;
   transition: 1.5s;
-  height: 22em;
+  width: 16em;
+  height: 9em;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 15px;
-}
-
-.worklist a:hover h1 {
-  opacity: 100%;
-}
-
-.worklist a:hover img {
-  opacity: 35%;
 }
 
 .testimonials-section {
@@ -421,8 +412,15 @@ nav li a:hover {
     background: var(--primary-color);
     color: white;
   }
+  .hero h1 {
+    font-size: 4em;
+  }
   .hero-img {
     width: 45%;
+  }
+  .worklist a img {
+    width: 32em;
+    height: 18em;
   }
 }
 
@@ -476,6 +474,10 @@ nav li a:hover {
     background: url("images/dots.svg") no-repeat;
     left: 4.5em;
     top: 2em;
+  }
+  .worklist a img {
+    width: 48em;
+    height: 27em;
   }
 }
 /*# sourceMappingURL=musicworks.css.map */

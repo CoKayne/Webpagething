@@ -207,7 +207,7 @@ section {
     h1 {
         transition: 1s;
         color: #fff;
-        font-size: 4em;
+        font-size: 3.2em;
         display: block;
         text-align: justify;
     }
@@ -237,53 +237,33 @@ div.feature-list {
 }
 
 .worklist {
-
-    // position: relative;
  
+    // position: absolute;
     a {         
-        max-width: 40em;
-        text-align: center;
-        position: relative;
-        // display: block;
-        // align-items: center;
-        // display: flex;
-        // justify-content: center;
-        // align-items: center;
         text-decoration: none;
+        // display: block;
+        // width: fit-content;
+        text-align: center;
+        // position: absolute;        
+        // position: relative;
 
         h1 {
-            position: absolute;
             color: #fff;
-            opacity: 0%;
             transition: 2s;
+            margin-top: 0;
+            margin-bottom: 3em;
+            // font-weight: lighter;
+            font-size: larger;
         }
 
         img {
-            // display: block;
-            // margin-left: auto;
-            // margin-right: auto;
-            width: 40em;
             transition: 1.5s;
-            height: 22em;
+            width: 16em;
+            height: 9em;
             object-fit: cover;
-            border-radius: 15px;
-            
-        }
-
-        &:hover {
-            
-            h1 {
-                opacity: 100%;
-            }
-
-            img {
-                opacity: 35%;
-            }
-        }
-        
+            border-radius: 15px; 
+        } 
     }
-
-
 }
 
 .testimonials-section {
@@ -437,8 +417,23 @@ nav {
         }
     }
 
+    .hero{
+        h1 {
+            font-size: 4em;
+        }
+    }
+
     .hero-img {
         width: 45%;
+    }
+
+    .worklist {
+        a {
+            img {
+                width: 32em;
+                height: 18em;
+            }
+        }
     }
 
 }
@@ -506,4 +501,12 @@ nav {
 
     }
 
+    .worklist {
+        a {
+            img {
+                width: 48em;
+                height: 27em;
+            }
+        }
+    }
 }

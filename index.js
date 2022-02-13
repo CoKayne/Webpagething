@@ -1,30 +1,40 @@
+// TODO have to do theme continuoius
+
+// mobile menu exit
 const mobileBtn = document.getElementById("mobile-cta")
     nav = document.querySelector("nav")
     mobileBtnExit = document.getElementById("mobile-exit");
 
+// mobile menu click
 mobileBtn.addEventListener("click", () => {
   nav.classList.add("menu-btn");
 })
 
+// mobile menu click
 mobileBtnExit.addEventListener("click", () => {
   nav.classList.remove("menu-btn");
 })
 
-  AOS.init({
-    duration : 3000,
-    mirror : false,
-    once : false
-  });
+// fading animation init
+AOS.init({
 
+  duration : 3000,
+  mirror : false,
+  once : false  
+
+});
+
+// dark theme init
 var switchStatus = "off",
-  center = document.querySelector('.center'),
-  box1 = document.querySelector('.box1'),
-  box2 = document.querySelector('.box2'),
-  shape = document.querySelector('.shape'),
-  circle = document.querySelector('.circle'),
-  body = document.querySelector('.body'),
-  nav = document.querySelector('.navbar');
+center = document.querySelector('.center'),
+box1 = document.querySelector('.box1'),
+box2 = document.querySelector('.box2'),
+shape = document.querySelector('.shape'),
+circle = document.querySelector('.circle'),
+body = document.querySelector('.body'),
+nav = document.querySelector('.navbar');
 
+// dark theme button animation
 const checkbox = document.getElementById('checkbox');
 checkbox.addEventListener('change', () => {
   
@@ -57,3 +67,5 @@ checkbox.addEventListener('change', () => {
     switchStatus = "off";
   }
 });
+
+// dark theme continuous
