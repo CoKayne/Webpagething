@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 :root {
   --primary-color: #619eae;
+  --secondary-color: #20272e;
   --background-color:#f2f2f2;
   --darktheme-color:#292929;
 }
@@ -47,6 +48,14 @@ body.dark .navbar span:hover {
 
 body.dark .feature-section {
   background-color: var(--darktheme-color);
+}
+
+body.dark .feature-section div.feature-list p {
+  color: var(--background-color);
+}
+
+body.dark .feature-section .worklist a h1 {
+  color: var(--background-color);
 }
 
 body.dark .testimonials-section a {
@@ -225,22 +234,17 @@ section {
 }
 
 section.feature-section {
-  background: #20272e;
+  background: var(--background-color);
   color: white;
 }
 
 div.feature-list p {
-  margin-bottom: 3.5rem;
-  display: block;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  color: var(--secondary-color);
+  margin-bottom: 10em;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
-  font-size: 1.2em;
-  width: 100%;
+  font-size: 100%;
 }
 
 .worklist a {
@@ -249,7 +253,7 @@ div.feature-list p {
 }
 
 .worklist a h1 {
-  color: #fff;
+  color: var(--secondary-color);
   -webkit-transition: 2s;
   transition: 2s;
   margin-top: 0;

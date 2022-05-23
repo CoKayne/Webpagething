@@ -3,6 +3,7 @@
 //initial setup
 :root {
     --primary-color: #619eae;
+    --secondary-color: #20272e;
     --background-color:#f2f2f2;
     --darktheme-color:#292929; 
 }
@@ -17,12 +18,7 @@ body {
     font-family: "Poppins";
     padding: 0;
     transition: 1s;
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
-    // min-height: 100vh;
 }
-
 
 // dark theme setup
 body.dark {
@@ -53,7 +49,25 @@ body.dark {
     }
 
     .feature-section {
+
         background-color: var(--darktheme-color);
+        
+        div.feature-list {
+            
+            p{
+               color: var(--background-color);
+            }
+        }
+
+        .worklist {
+
+            a {         
+                h1 {
+                    color: var(--background-color);
+                }
+            }
+
+        }
     }
 
     .testimonials-section {
@@ -219,36 +233,30 @@ section {
 }
 
 section.feature-section {
-    background: #20272e;
+    background: var(--background-color);
     color: white;
 }
 
 div.feature-list {
 
-    p {
-        margin-bottom: 3.5rem;
-        display: block;
-        justify-content: center;
-        align-items: center;
+    p{
+        color: var(--secondary-color);
+        margin-bottom: 10em;
+        margin-left: auto;
+        margin-right: auto;
         text-align: center;
-        font-size: 1.2em;
-        width: 100%;
+        font-size: 100%;
     }
 }
 
 .worklist {
- 
-    // position: absolute;
+
     a {         
         text-decoration: none;
-        // display: block;
-        // width: fit-content;
         text-align: center;
-        // position: absolute;        
-        // position: relative;
 
         h1 {
-            color: #fff;
+            color: var(--secondary-color);
             transition: 2s;
             margin-top: 0;
             margin-bottom: 3em;

@@ -1,0 +1,487 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+:root {
+  --primary-color: #619eae;
+  --secondary-color: #20272e;
+  --background-color:#f2f2f2;
+  --darktheme-color:#292929;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background-color);
+  margin: 0;
+  font-family: "Poppins";
+  padding: 0;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+body.dark {
+  background-color: var(--darktheme-color);
+}
+
+body.dark .navbar {
+  background-color: var(--darktheme-color);
+}
+
+body.dark .navbar .logo {
+  color: #fff;
+}
+
+body.dark .navbar a {
+  display: block;
+  color: #fff;
+}
+
+body.dark .navbar a:hover {
+  -webkit-transition: .5s;
+  transition: .5s;
+  color: var(--primary-color);
+}
+
+body.dark .navbar span:hover {
+  color: #fff;
+}
+
+body.dark .feature-section {
+  background-color: var(--darktheme-color);
+}
+
+body.dark .feature-section div.feature-list p {
+  color: var(--background-color);
+}
+
+body.dark .feature-section .worklist a h1 {
+  color: var(--background-color);
+}
+
+body.dark .testimonials-section a {
+  color: var(--darktheme-color);
+  border: 2px solid var(--darktheme-color);
+}
+
+.label {
+  position: absolute;
+}
+
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.center {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.box1 {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background: var(--darktheme-color);
+  border-radius: 4px;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.box2 {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-color: var(--darktheme-color);
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  border-radius: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.circle {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+  border-radius: 50%;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.shape {
+  position: absolute;
+  width: 22px;
+  height: 30px;
+  background-color: var(--darktheme-color);
+  z-index: 1;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  left: 1px;
+  bottom: 5px;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.navbar {
+  background: white;
+  -webkit-transition: 1s;
+  transition: 1s;
+  padding: 1em;
+}
+
+.navbar .logo {
+  display: block;
+  text-align: center;
+  margin-right: 10em;
+  text-decoration: none;
+  -webkit-transition: 1s;
+  transition: 1s;
+  font-weight: bold;
+  color: black;
+  font-size: 1.2em;
+  border-radius: 20px;
+}
+
+.navbar .logo:hover {
+  color: var(--primary-color);
+  background-color: var(--primary-color);
+  -webkit-box-shadow: 0 0 10px var(--primary-color), 0 0 40px var(--primary-color), 0 0 80px var(--primary-color);
+          box-shadow: 0 0 10px var(--primary-color), 0 0 40px var(--primary-color), 0 0 80px var(--primary-color);
+}
+
+.navbar .logo span {
+  -webkit-transition: 1s;
+  transition: 1s;
+  color: var(--primary-color);
+}
+
+.navbar .logo span:hover {
+  color: var(--darktheme-color);
+}
+
+.navbar nav {
+  display: none;
+}
+
+.navbar .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: space-between;
+}
+
+.navbar .mobile-menu {
+  cursor: pointer;
+}
+
+a {
+  display: block;
+  -webkit-transition: 1s;
+  transition: 1s;
+  color: #444444;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+section {
+  padding: 5em 2em;
+}
+
+.hero {
+  text-align: center;
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/f/f8/Wallpapersden.com_anonymous-hacker-working_1280x720.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.hero h1 {
+  -webkit-transition: 1s;
+  transition: 1s;
+  color: #fff;
+  font-size: 3.2em;
+  display: block;
+  text-align: justify;
+}
+
+.hero .container {
+  display: block;
+}
+
+section.feature-section {
+  background: var(--background-color);
+  color: white;
+}
+
+div.feature-list p {
+  color: var(--secondary-color);
+  margin-bottom: 10em;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 100%;
+}
+
+.worklist a {
+  text-decoration: none;
+  text-align: center;
+}
+
+.worklist a h1 {
+  color: var(--secondary-color);
+  -webkit-transition: 2s;
+  transition: 2s;
+  margin-top: 0;
+  margin-bottom: 3em;
+  font-size: larger;
+}
+
+.worklist a img {
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
+  width: 16em;
+  height: 9em;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 15px;
+}
+
+.testimonials-section {
+  background: var(--primary-color);
+  color: white;
+}
+
+.testimonials-section li {
+  background: #5ca8b3;
+  text-align: center;
+  padding: 2em 1em;
+  width: 80%;
+  margin: 0 auto 5em auto;
+  border-radius: 1em;
+}
+
+.testimonials-section li:hover img {
+  -webkit-transform: translateY(-1.5em);
+          transform: translateY(-1.5em);
+}
+
+.testimonials-section a {
+  border: 2px solid white;
+  color: #fff;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bolder;
+  font-size: 2em;
+}
+
+.testimonials-section img {
+  -webkit-transition: .5s;
+  transition: .5s;
+  width: 12em;
+  height: 12em;
+  border: 5px solid #5ca8b3;
+  border-radius: 50%;
+  margin-top: -4.5em;
+  margin-bottom: 1em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+label {
+  display: block;
+  font-size: 1.2em;
+  margin-bottom: .5em;
+}
+
+nav.menu-btn {
+  display: block;
+}
+
+nav {
+  position: fixed;
+  z-index: 999;
+  width: 68%;
+  right: 0;
+  top: 0;
+  background-color: #20272e;
+  height: 100vh;
+  padding: 1em;
+}
+
+nav ul.primary-nav {
+  margin-top: 5em;
+}
+
+nav li {
+  display: block;
+}
+
+nav li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  font-size: 1.3em;
+  padding: .5em;
+  text-align: right;
+}
+
+nav li a:hover {
+  -webkit-transition: .5s;
+  transition: .5s;
+  color: var(--primary-color);
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+}
+
+.mobile-menu-exit {
+  float: right;
+  margin: .5em;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 768px) {
+  .mobile-menu, .mobile-menu-exit {
+    display: none;
+  }
+  .navbar .container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 180px auto;
+        grid-template-columns: 180px auto;
+  }
+  .navbar nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    background: none;
+    position: unset;
+    height: auto;
+    width: 100%;
+    padding: 0;
+  }
+  .navbar nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .navbar nav a {
+    color: black;
+    padding: .1em 1em;
+    font-size: 1em;
+  }
+  .navbar nav ul.primary-nav {
+    margin: 0;
+  }
+  .navbar nav li.current a {
+    font-weight: bold;
+  }
+  .navbar nav li.go-premium-cta a {
+    color: var(--primary-color);
+    border: 3px solid var(--primary-color);
+    font-weight: bold;
+    border-radius: 5em;
+    margin-top: -.2em;
+  }
+  .navbar nav li.go-premium-cta a:hover {
+    background: var(--primary-color);
+    color: white;
+  }
+  .hero h1 {
+    font-size: 4em;
+  }
+  .hero-img {
+    width: 45%;
+  }
+  .worklist a img {
+    width: 32em;
+    height: 18em;
+  }
+}
+
+@media only screen and (min-width: 1150px) {
+  .container {
+    width: 1080px;
+    margin: 0 auto;
+  }
+  section {
+    padding: 10em 4em;
+  }
+  .hero .container {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    text-align: center;
+  }
+  div.feature-list p {
+    width: 60em;
+  }
+  .feature-section {
+    -webkit-transition: 1s;
+    transition: 1s;
+    position: relative;
+  }
+  .testimonials-section ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .testimonials-section ul li {
+    margin: 0 1em;
+  }
+}
+
+@media only screen and (min-width: 1450px) {
+  .feature-section:before {
+    content: "";
+    position: absolute;
+    width: 10%;
+    height: 20em;
+    background: var(--primary-color);
+    left: 0;
+    top: -4em;
+  }
+  .feature-section:after {
+    content: "";
+    position: absolute;
+    width: 10%;
+    height: 20em;
+    background: url("images/dots.svg") no-repeat;
+    left: 4.5em;
+    top: 2em;
+  }
+  .worklist a img {
+    width: 48em;
+    height: 27em;
+  }
+}
+/*# sourceMappingURL=project.css.map */
