@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kayne Duan - Cool Bot</title>
+    <link rel="stylesheet" href="coolBot.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body class="body">
+    
+  <!-- dark theme button -->
+    <input type="checkbox" class="checkbox" id="checkbox">
+    <label for="checkbox" class="label">
+      <div class="center" onclick="toggleSwitch()">
+        <div class="box1">
+          <div class="shape"></div>
+        </div>
+        <div class="box2">
+          <div class="circle"></div>
+        </div>
+      </div>
+    </label>
+
+    <div class="navbar">
+        <div class="container">
+          <a class="logo" href="#">Kayne<span>Duan</span></a>
+
+          <img id="mobile-cta" class="mobile-menu" src="./images/menu.svg" alt="Open Navigation">
+
+          <nav>
+            <img id="mobile-exit" class="mobile-menu-exit" src="./images/exit.svg" alt="Close Navigation"> 
+            <ul class="primary-nav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="musicworks.html">Musicworks</a></li>
+              <li><a href="projects.html">Projects</a></li>
+              <li><a href="#">Schoolworks</a></li>
+            </ul>            
+
+            <ul class="secondary-nav">
+              <li><a href="#contact-section-scroll">Contact</a></li>
+              <li class="go-premium-cta"><a href="#">New Stuff</a></li>
+            </ul>            
+          </nav>
+        </div>
+    </div>
+    
+    <div class="hero">
+        <img src="./images/Discord.png" alt="Music Alarm">
+        <h1>Cool Bot</h1>
+    </div>
+        
+    <div class="intro">
+        <p>
+          Cool Bot is a Discord bot that is able to play music, time notifications, randomly draw lots...... etc.
+          After using many others' Discord bots, I determined to make my own one.
+          I utilized Python to code this bot, some people may use JavaScript, but I'm 
+          more comfortable using Python. While programming this bot, I got a better
+          understanding of Object-Oriented Programming, decorator...... and more.
+        </p>
+        <p class="example">Cool bot help command</p>
+        <img src="./images/DiscordBot_help.png" alt="example images">
+        <p class="example">random grouping</p>
+        <img src="./images/discord_bot_class_squad.png" alt="example images">
+        <p class="example">playing and pausing music</p>
+        <img src="./images/discord_bot_music_png" alt="example images">
+    </div>
+    
+    <div class="source"> 
+        <a href="https://github.com/CoKayne/Cool_Bot"><img src="./images/git-removebg-preview.png" alt="github"></a>        
+        <p>Source Code</p>
+    </div>
+    
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="index.js"></script>
+
+</body>
+</html>

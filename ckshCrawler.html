@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kayne Duan - Cksh Crawler</title>
+    <link rel="stylesheet" href="ckshCrawler.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body class="body">
+    
+  <!-- dark theme button -->
+    <input type="checkbox" class="checkbox" id="checkbox">
+    <label for="checkbox" class="label">
+      <div class="center" onclick="toggleSwitch()">
+        <div class="box1">
+          <div class="shape"></div>
+        </div>
+        <div class="box2">
+          <div class="circle"></div>
+        </div>
+      </div>
+    </label>
+
+    <div class="navbar">
+        <div class="container">
+          <a class="logo" href="#">Kayne<span>Duan</span></a>
+
+          <img id="mobile-cta" class="mobile-menu" src="./images/menu.svg" alt="Open Navigation">
+
+          <nav>
+            <img id="mobile-exit" class="mobile-menu-exit" src="./images/exit.svg" alt="Close Navigation"> 
+            <ul class="primary-nav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="musicworks.html">Musicworks</a></li>
+              <li><a href="projects.html">Projects</a></li>
+              <li><a href="#">Schoolworks</a></li>
+            </ul>            
+
+            <ul class="secondary-nav">
+              <li><a href="#contact-section-scroll">Contact</a></li>
+              <li class="go-premium-cta"><a href="#">New Stuff</a></li>
+            </ul>            
+          </nav>
+        </div>
+    </div>
+    
+    <div class="hero">
+        <img src="./images/ckshCrawler.png" alt="Music Alarm">
+        <h1>Cksh Crawler</h1>
+    </div>
+        
+    <div class="intro">
+        <p>
+          Cksh Crawler is a simple tool that can sort the latest information 
+          from CKSH's official website by time order. The latest news on the 
+          official CKSH website isn't sorted by date. Instead, they are sorted 
+          by Importance. This method may be useful for those who aim to make 
+          acquaintance with the school. However, it's extremely inconvenient 
+          for students that want to receive the latest news. So I coded this 
+          little project with Python, and utilize Python's module "Tkinter" for the UI.
+        </p>
+        <p class="example">Example Footages</p>
+        <img src="./images/ckshCrawler.png" alt="example images">
+    </div>
+    
+    <div class="source"> 
+        <p>Source Code</p>
+        <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2FCoKayne%2Fhehe%2Fblob%2Fmain%2FckshCrawler.py&style=github-gist&showBorder=on&showLineNumbers=on&showFileMeta=on&showCopy=on&fetchFromJsDelivr=on"></script>
+    </div>
+    
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="index.js"></script>
+
+</body>
+</html>
