@@ -21,10 +21,10 @@
     if (!imgs.length) return;
 
     const sync = function () {
-      const ok = imgs.some(function (img) {
-        return img.naturalWidth > 0;
+      const missing = imgs.every(function (img) {
+        return img.complete && img.naturalWidth === 0;
       });
-      media.classList.toggle("has-image", ok);
+      media.classList.toggle("is-missing", missing);
     };
 
     imgs.forEach(function (img) {
