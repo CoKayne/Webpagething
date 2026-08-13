@@ -166,10 +166,14 @@ a:hover {
 
 .opening {
   margin: 0 0 2.5rem;
+  display: flex;
+  justify-content: center;
 }
 
 .opening img {
-  width: 100%;
+  width: auto;
+  max-width: 100%;
+  max-height: 88vh;
   height: auto;
   display: block;
 }
