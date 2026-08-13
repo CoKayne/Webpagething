@@ -249,6 +249,14 @@ a:hover {
   max-width: var(--measure);
 }
 
+.work-mark {
+  display: block;
+  width: 64px;
+  height: 64px;
+  margin-bottom: 1rem;
+  border: 1px solid var(--line);
+}
+
 .label h3 {
   font-family: var(--serif);
   font-size: clamp(1.6rem, 3vw, 2.15rem);
