@@ -2,127 +2,189 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kayne Duan - Homepage</title>
-  <link rel="stylesheet" href="home.css">
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <title>Kayne Duan</title>
+  <meta name="description" content="Kayne Duan (段宇謙). CSIE student at National Taiwan University. Campus systems, a coupon product, and NLP research. Taipei.">
+  <meta name="theme-color" content="#fcfaf2">
+  <meta property="og:title" content="Kayne Duan">
+  <meta property="og:description" content="CSIE student at National Taiwan University. Campus systems, a coupon product, and NLP research. Taipei.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400;0,500;0,600;1,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
+<body>
+  <a class="skip" href="#intro">Skip to content</a>
 
-<body class="body">
-    <input type="checkbox" class="checkbox" id="checkbox">
-    <label for="checkbox" class="label">
-      <div class="center" onclick="toggleSwitch()">
-        <div class="box1">
-          <div class="shape"></div>
-        </div>
-        <div class="box2">
-          <div class="circle"></div>
-        </div>
+  <header class="site-header">
+    <a class="wordmark" href="index.html">Kayne Duan</a>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav">Menu</button>
+    <nav id="nav">
+      <a href="#work">Work</a>
+      <a href="#pictures">Pictures</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="intro" class="intro">
+      <figure class="media portrait">
+        <img src="images/portrait.jpg" alt="Kayne Duan" fetchpriority="high">
+      </figure>
+      <div class="intro-text">
+        <h1>Kayne Duan</h1>
+        <p class="aka">段宇謙</p>
+        <p class="wall">
+          CSIE student at National Taiwan University. I lead the student
+          association’s information team, work on a campus coupon product,
+          and do NLP research at MiuLab. I also photograph.
+        </p>
       </div>
-    </label>
-
-    <div class="navbar">
-        <div class="container">
-          <a class="logo" href="#">Kayne<span>Duan</span></a>
-
-          <img id="mobile-cta" class="mobile-menu" src="./images/menu.svg" alt="Open Navigation">
-
-          <nav>
-            <img id="mobile-exit" class="mobile-menu-exit" src="./images/exit.svg" alt="Close Navigation"> 
-            <ul class="primary-nav">
-              <li class="current"><a href="index.html">Home</a></li>
-              <li><a href="musicworks.html">Musicworks</a></li>
-              <li><a href="projects.html">Projects</a></li>
-              <li><a href="#">Schoolworks</a></li>
-            </ul>            
-
-            <ul class="secondary-nav">
-              <li><a href="#contact-section-scroll">Contact</a></li>
-              <li class="go-premium-cta"><a href="#">New Stuff</a></li>
-            </ul>            
-          </nav>
-        </div>
-    </div>
-
-    <section class="hero">
-      <div class="container">
-        <div class="left-col">
-          <p class="subhead">I play multiple roles</p>
-          <h1>Student, Dev, Producer</h1>
-
-          <div class="hero-cta">
-            <a href="#feature-section-scroll" class="primary-cta">Let's Go!</a>
-            <a href="https://www.youtube.com/channel/UCN3VUKF45e6dmPM1pG3xTIg" class="watch-video-cta">
-              <img src="./images/watch.svg" alt="Watch a Video">Dkayne
-            </a>
-          </div>
-        </div>
-       <img src="./images/Me.jpg" class="hero-img" alt="illustration"> 
-      </div>   
     </section>
 
-    <section id="feature-section-scroll" class="feature-section">
-      <div class="container" >
-        <div class="feature-list" data-aos="fade-right">
-          <h1>Hello! I'm Kayne Duan!</h1>
+    <section id="work" class="chapter">
+      <h2 class="chapter-title">Work</h2>
+
+      <article class="entry" id="coupro">
+        <figure class="media">
+          <img src="images/coupro.jpg" alt="CouPro" loading="lazy">
+        </figure>
+        <div class="label">
+          <h3>CouPro</h3>
+          <p class="tombstone">2025–ongoing · Founder and developer</p>
           <p>
-            I am a high-school Student based in Taiwan,<br>
-            with a passion for programming and music producing.<br>
-            Not long time ago, I established a youtube channel called Dkayne,<br> where I put all my musicworks.<br> 
-            Besides coding and producing, designing is also one of my habits,<br> 
-            I designed clothes for my class at school, <br>
-             and also for my club -- CSDC.<br>
-            CSDC stands for Computer Science Develop Club, a club where students can discuss about all the things 
-            associated to computer, and I am the director there.
+            A campus coupon and loyalty platform. I built the production stack
+            (Django, PostgreSQL, React) and shipped iOS and Android apps.
+            About 450 users and 10 merchant partners. Customer acquisition
+            cost was around 8 NTD. One partner store saw an 8% week-over-week
+            increase in revenue.
           </p>
         </div>
+      </article>
 
-        <img src="./images/conan copy.jpg" alt="Me dressed up as Conan">
-      </div>
-    </section>
-
-    <section class="testimonials-section">
-      <div class="container">
-        <ul>
-          <li>
-            <img src="https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fspecials-images.forbesimg.com%2Fdam%2Fimageserve%2F1157354179%2F960x0.jpg%3Ffit%3Dscale" alt="Projects">
-            <a href="projects.html">Projects</a>
-          </li>
-          <li>
-            <img src="https://i.pinimg.com/736x/0d/4a/a1/0d4aa16fe31dba498c27f3850cdf0e80.jpg" alt="Schoolworks">
-            <a href="#">Schoolworks</a>
-          </li>
-          <li>
-            <img src="https://cdn.pixabay.com/photo/2021/07/17/09/32/dj-6472628_1280.jpg" alt="Musicworks">
-            <a href="musicworks.html">Musicworks</a>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <section id="contact-section-scroll" class="contact-section">
-      <div class="container">
-        <div class="contact-left" data-aos="fade-right">
-          <h2>Contact me</h2>
-
-          <img src="./images/instagram-Logo-PNG-Transparent-Background-download.png" alt="Instagram logo">
-          <a href="https://www.instagram.com/kayneduan727">Instagram</a> <br>
-          <img src="./images/discord_logo.png"alt="Discord logo">
-          <a href="https://discord.gg/C4ghC83s">Discord</a> <br>
-          <img src="./images/facebook_logo.png" alt="Facebook logo">
-          <a href="https://www.facebook.com/kayneduan">Facebook</a> <br>
-          <img class="github-logo" src="./images/GitHub-Mark-120px-plus.png" alt="Github logo">
-          <a href="https://github.com/CoKayne">Github - CoKayne</a>
+      <article class="entry" id="ntusa">
+        <figure class="media">
+          <img src="images/ntusa.jpg" alt="NTU Student Association information systems" loading="lazy">
+        </figure>
+        <div class="label">
+          <h3>NTU Student Association, Information Department</h3>
+          <p class="tombstone">2025–ongoing · Head of Information</p>
+          <p>
+            I lead a nine-person team on campus systems: a Wi-Fi downdetector
+            (1,600+ reports), an internal MIS, and the official website.
+            I joined as a member in 2024 through a civic-tech hackathon.
+            The website later received inbound interest from a university
+            in Malaysia.
+          </p>
         </div>
-          <div class="contact-right">
-            <iframe width="650" height="320" src="https://www.youtube.com/embed/kY03U4BeK-M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </div>
+      </article>
+
+      <article class="entry" id="miulab">
+        <div class="label">
+          <h3>Avalon-ToM-Bench</h3>
+          <p class="tombstone">MiuLab, NTU · 2025–ongoing · Undergraduate researcher</p>
+          <p>
+            Research on NLP, including theory-of-mind reasoning in language models.
+            Co-author of Avalon-ToM-Bench, which evaluates fine-grained theory of mind
+            through asymmetric game mechanics. We benchmarked 28 models and ran
+            probing and steering analyses.
+          </p>
+        </div>
+      </article>
+
+      <article class="entry" id="compass">
+        <figure class="media">
+          <img src="images/compass.jpg" alt="Innovation North Compass website" loading="lazy">
+        </figure>
+        <div class="label">
+          <h3>Innovation North Compass</h3>
+          <p class="tombstone">Ivey Business School · July–August 2025 · Engineer and designer</p>
+          <p>
+            A public website for a Canadian cross-border research initiative.
+            Designed in Figma, then built and deployed, over four weeks.
+          </p>
+        </div>
+      </article>
+    </section>
+
+    <section id="pictures" class="chapter">
+      <h2 class="chapter-title">Pictures</h2>
+      <p class="chapter-lead">
+        Photography director for NTU CSIE Night and CSIE Camp, 2025.
+      </p>
+      <div class="gallery">
+        <figure class="media">
+          <img src="images/csie-night-01.jpg" alt="CSIE Night, 2025" loading="lazy">
+          <figcaption>CSIE Night, 2025</figcaption>
+        </figure>
+        <figure class="media">
+          <img src="images/csie-night-02.jpg" alt="CSIE Night, 2025" loading="lazy">
+          <figcaption>CSIE Night, 2025</figcaption>
+        </figure>
+        <figure class="media">
+          <img src="images/csie-camp-01.jpg" alt="CSIE Camp, 2025" loading="lazy">
+          <figcaption>CSIE Camp, 2025</figcaption>
+        </figure>
+        <figure class="media">
+          <img src="images/csie-camp-02.jpg" alt="CSIE Camp, 2025" loading="lazy">
+          <figcaption>CSIE Camp, 2025</figcaption>
+        </figure>
       </div>
     </section>
-    
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script src="index.js"></script>
 
+    <section id="about" class="chapter about">
+      <h2 class="chapter-title">About</h2>
+      <div class="about-col">
+        <h3>Education</h3>
+        <p>
+          National Taiwan University<br>
+          B.S. Computer Science and Information Engineering<br>
+          Expected June 2027 · GPA 3.85 / 4.3
+        </p>
+        <p>
+          University College London<br>
+          Exchange, January–June 2027
+        </p>
+        <p>
+          NTU Creativity and Entrepreneurship Program, 18th cohort.
+          Admitted through a venture-selection process.
+          NTU AI Builders Challenge, Silicon Valley, 2026.
+        </p>
+      </div>
+      <div class="about-col">
+        <h3>Tools</h3>
+        <p>
+          Python, JavaScript/TypeScript, C/C++.
+          Django, React, Node.js, PostgreSQL, Git.
+          Expo EAS, App Store Connect, Google Play Console,
+          GCP, Vercel, Render, Cloudflare, Sentry.
+        </p>
+        <h3>Other</h3>
+        <p>
+          XTrace Hackathon, 3rd place.
+          YTP Hackathon, finalist.
+          SITCON Hackathon.
+          Member of g0v.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact" class="site-footer">
+    <p class="footer-name">Kayne Duan</p>
+    <p>
+      <a href="mailto:duankayne@gmail.com">duankayne@gmail.com</a>
+    </p>
+    <p class="footer-links">
+      <a href="https://github.com/CoKayne" rel="noreferrer">GitHub</a>
+      <a href="https://www.linkedin.com/in/kayne-duan-23895633a" rel="noreferrer">LinkedIn</a>
+      <a href="archive.html">Earlier work</a>
+    </p>
+  </footer>
+
+  <script src="main.js"></script>
 </body>
 </html>
