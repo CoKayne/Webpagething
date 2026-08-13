@@ -233,6 +233,11 @@ a:hover {
   background: transparent;
 }
 
+.entry .media.diagram img {
+  border: 1px solid var(--line);
+  background: #fff;
+}
+
 .phones .phone-row {
   display: grid;
   grid-template-columns: 1fr;
