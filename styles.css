@@ -157,16 +157,22 @@ a:hover {
 /* Intro: object + wall text */
 
 .intro {
-  display: grid;
-  gap: 2rem;
-  padding: 3rem var(--pad) 4.5rem;
+  padding: 0 0 4.5rem;
   border-bottom: 1px solid var(--line);
 }
 
-.portrait img {
+.opening {
+  margin: 0 0 2.5rem;
+}
+
+.opening img {
   width: 100%;
-  aspect-ratio: 3 / 4;
-  object-fit: cover;
+  height: auto;
+  display: block;
+}
+
+.intro-text {
+  padding: 0 var(--pad);
 }
 
 .intro h1 {
@@ -220,7 +226,20 @@ a:hover {
 
 .entry .media img {
   max-height: 72vh;
-  object-fit: cover;
+  object-fit: contain;
+  background: transparent;
+}
+
+.phones .phone-row {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.75rem;
+}
+
+.phones img {
+  max-height: none;
+  width: 100%;
+  height: auto;
 }
 
 .label {
@@ -378,12 +397,13 @@ a:hover {
 }
 
 @media (min-width: 800px) {
-  .intro:has(.media.has-image) {
-    grid-template-columns: minmax(240px, 38%) 1fr;
-    gap: 4rem;
-    align-items: end;
-    padding-top: 4rem;
-    padding-bottom: 5.5rem;
+  .intro-text {
+    padding-top: 0.5rem;
+  }
+
+  .phones .phone-row {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
   }
 
   .gallery {

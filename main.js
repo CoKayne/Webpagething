@@ -16,22 +16,21 @@
     });
   }
 
-  document.querySelectorAll(".media img").forEach(function (img) {
-    const media = img.closest(".media");
-    if (!media) return;
+  document.querySelectorAll(".media").forEach(function (media) {
+    const imgs = Array.from(media.querySelectorAll("img"));
+    if (!imgs.length) return;
 
-    const show = function () {
-      if (img.naturalWidth > 0) media.classList.add("has-image");
+    const sync = function () {
+      const ok = imgs.some(function (img) {
+        return img.naturalWidth > 0;
+      });
+      media.classList.toggle("has-image", ok);
     };
 
-    img.addEventListener("load", show);
-    img.addEventListener("error", function () {
-      media.classList.remove("has-image");
+    imgs.forEach(function (img) {
+      img.addEventListener("load", sync);
+      img.addEventListener("error", sync);
+      if (img.complete) sync();
     });
-
-    if (img.complete) {
-      if (img.naturalWidth > 0) show();
-      else media.classList.remove("has-image");
-    }
   });
 })();
